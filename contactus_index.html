@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+    <link rel="stylesheet" href="css/contactus_style.css"/>
+	<link rel="stylesheet" href="css/validation.css">
+</head>
+<body class="form-v6">
+	<div class="page-content">
+		<div class="form-v6-content">
+			<div class="form-left">
+				<img src="images/form-v6.jpg" height="80%" width="100%" alt="form">
+			</div>
+				<form class="form-detail" name="form" action="https://formspree.io/f/xayvwdly" method="POST">
+				<h2>Contact Form</h2>
+				<div class="form-row">
+					<input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+				</div>
+				<div class="form-row">
+					<input type="email" name="_replyto" id="your-email" class="input-text" placeholder="Email Address" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+					<p>Email must be a valid address, e.g. me@mydomain.com</p>
+				</div>
+				<div class="form-row">
+						Your message:
+						<textarea rows="10" cols="55" class="input-text" placeholder="Message" name="message" required></textarea>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="contactus.js"></script>
+	<script src="prevent.js"></script>
+</body>
+
+</html>
